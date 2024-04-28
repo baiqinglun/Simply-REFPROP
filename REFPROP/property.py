@@ -6,6 +6,8 @@ class Property(Enum):
     D="D"
     P="P"
     T="T"
+    CV="CV"
+    CP="CP"
 
     def __str__(self) -> str:
         return self.value

@@ -29,6 +29,7 @@ class REFPROPManager(object):
             return result.Output[0]
         else:
             print(f"错误: {result.herr}")
+            return result.Output[0]
 
     def PSCalculateProperty(self,calculate_type:Property,p=101325,s=0)->float:
         result = self.RP.REFPROPdll(self.substance, "PS",str(calculate_type),  self.BASE_SI, 0, 0, p, s, [1.0])
@@ -36,3 +37,4 @@ class REFPROPManager(object):
             return result.Output[0]
         else:
             print(f"错误: {result.herr}")
+            return result.Output[0]

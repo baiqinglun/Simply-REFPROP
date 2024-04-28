@@ -2,7 +2,7 @@ R = 8.314
 import json
 
 class Gas:
-    def __init__(self,name="Gas",P=10100,T=298):
+    def __init__(self,name="Gas",P=101325,T=298):
         with open("REFPROP/gas.json", 'r') as file:
             data = json.load(file)
             self.name = data[name]["name"]
